@@ -10,6 +10,9 @@ module.exports = {
     port: 3000,
     contentBase: __dirname + '/public/'
   },
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
   module: {
     loaders: [{
       test: /.jsx?$/,
