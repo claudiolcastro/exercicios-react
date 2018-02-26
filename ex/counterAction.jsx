@@ -1,13 +1,13 @@
-function inc(params) {
+function inc() {
   return { type: 'INC' }
 }
 
-function dec(params) {
+function dec() {
   return { type: 'DEC' }
 }
 
-function stepChanged(params) {
-  return { 
+function stepChanged(e) {
+  return {
     type: 'STEP_CHANGED',
     payload: e.target.value
    }
